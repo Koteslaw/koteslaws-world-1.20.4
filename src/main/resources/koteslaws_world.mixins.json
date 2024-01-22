@@ -3,7 +3,8 @@
 	"package": "net.koteslaw.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"NetherPortalMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
