@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "koteslaws_world",
+	"version": "${version}",
+	"name": "Koteslaws World",
+	"description": "",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/koteslaws_world/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "net.koteslaw.KoteslawsWorld",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "net.koteslaw.KoteslawsWorldClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "net.koteslaw.KoteslawsWorldDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"koteslaws_world.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.22"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
